@@ -1,0 +1,9 @@
+env: flex
+runtime: gs://elixir-runtime/elixir.yaml
+service: elixir-flex
+runtime_config:
+  release_app: websocket_app
+manual_scaling:
+  instances: 1
+network:
+  session_affinity: true
